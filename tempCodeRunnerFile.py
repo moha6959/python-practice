@@ -1,5 +1,10 @@
-number=int(input("Enter a number? "))#asks a user to enter a number of his choice
-if number % 2==0:  #checks if the number is divisible by 2
-    print("Even ")
+num=int(input("Enter a number? "))
+factorial=1
+if num<0:
+    print("there is no factorial for negative numbers")
+elif num==0:
+    print("factorial of is 1")
 else:
-    print("odd")
+    for i in range(1,num+1):
+        factorial=factorial*i
+print("The factorial is: ", factorial)
