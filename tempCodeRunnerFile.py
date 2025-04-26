@@ -1,5 +1,6 @@
-message="How to reverse a string"
-new_message=""
-for i in message:
-    new_message=i+new_message
-print(new_message)
+#create a list
+list=[3,6,4,7,8,9,10]
+sum=0
+for i in list:
+    sum+=i
+print("The sum is: ",sum)
