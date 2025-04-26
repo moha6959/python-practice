@@ -1,8 +1,11 @@
-n=int(input("Enter a number? "))
-#initialize sum to 0
-sum=0
-while n!=0:
-    digit=n%10 #gets the last digit of n
-    sum+=digit
-    n=n//10  #removes the last digit of n
-print("The sum of the digits is: ",sum)
+num=int(input("Enter a number? "))
+#initialize the factorial to 1
+factorial=1
+if num<0:
+    print("there is no factorial for negative numbers")
+elif num==0:
+    print("factorial of is 1")
+else:
+    for i in range(1,num+1):#num+1 ensures that the stop number is also included
+        factorial=factorial*i
+print("The factorial is: ", factorial)
