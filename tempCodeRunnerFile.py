@@ -1,6 +1,8 @@
-#create a list
-list=[3,6,4,7,8,9,10]
-sum=0
-for i in list:
-    sum+=i
-print("The sum is: ",sum)
+def factorial(n):
+    if n==0:
+        return 1
+    elif n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+print(factorial(8))
